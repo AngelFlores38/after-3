@@ -98,3 +98,54 @@ p {
 .bi-youtube {
     color: red;
 }
+
+/*FILTRO*/
+#saladas, #dulces, #todas{
+    display: none;
+}
+.salada, .dulce {
+    display: none;
+}
+
+#saladas:checked ~ .container-cards .salada {
+    display: flex;
+}
+#dulces:checked ~ .container-cards .dulce {
+    display: flex;
+}
+
+#todas:checked ~ .container-cards .salada {
+    display: flex;
+}
+#todas:checked ~ .container-cards .dulce {
+    display: flex;
+}
+
+.container-opciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (min-width: 560px) {
+    .container-opciones{
+        flex-direction: row;
+    }
+}
+
+.container-opciones label { 
+    border: solid 1px;
+    padding: 8px 15px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.container-opciones label:hover {
+    background-color: #3dc754;
+    border: none;
+}
+
+
