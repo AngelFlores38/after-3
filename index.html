@@ -17,7 +17,7 @@
 <body>
     <header>
     <!-- MENU DE NAVEGACION -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
         <a class="navbar-brand" href="#">After 3</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,8 +36,8 @@
     </nav>
     </header>
 
-    <section>
-        <h1>Bienvenidos a nuestro restaurante</h1>
+    <section class="my-5"> <!-- my-5 da un margin top y boton a la vez  -->
+        <h1 class="my-5 text-center">Bienvenidos a nuestro restaurante</h1>
         
         <!-- CARRUSEL -->
         <!-- RELLENAR LOS ALT -->
@@ -70,9 +70,9 @@
         </div>
     </section>
 
-    <section>
-        <h2>Tenemos los mejores chef y las mejores recetas</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quisquam facere animi ab exercitationem. Veniam vero saepe blanditiis accusantium veritatis nulla corrupti corporis ipsa. Soluta aliquam voluptatem corporis unde minima?</p>
+    <section class="container my-5">
+        <h2 class="text-center">Tenemos los mejores chef y las mejores recetas</h2>
+        <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quisquam facere animi ab exercitationem. Veniam vero saepe blanditiis accusantium veritatis nulla corrupti corporis ipsa. Soluta aliquam voluptatem corporis unde minima?</p>
 
         <div class="container-cards">
             <!-- CARD 1 -->
@@ -117,36 +117,39 @@
         </div>
     </section>
 
-    <section>
-        <div class="icono-texto">
-            <img src="img/cook-dark-skin-tone.svg" alt="Chef">
+    <!-- d-flex flex-column aling-items-center para centrar -->
+    <!--col-12 col-md-4 para bootstrap en pantallas-->
+    <!--MX-AUTO ES MARGIN 0 AUTO-->
+    <section class="container row mx-auto my-5">
+        <div class="icono-texto d-flex flex-column align-items-center col-12 col-md-4">
+            <img src="img/cook-dark-skin-tone.svg" alt="Chef" class="mb-3"> <!--MarginBoton 3px bootstrap-->
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt iure quos nemo quia earum sint corrupti ipsam aliquam, magnam, minima distinctio! Quae qui molestiae itaque vitae explicabo aut rerum quod?</p>
         </div>
 
-        <div class="icono-texto">
-            <img src="img/food-kitchenware-serving-dome-cook-tool-dome-kitchen-serving-paltter-dish-tools-food.svg" alt="Tapa de plato">
+        <div class="icono-texto d-flex flex-column align-items-center col-12 col-md-4">
+            <img src="img/food-kitchenware-serving-dome-cook-tool-dome-kitchen-serving-paltter-dish-tools-food.svg" alt="Tapa de plato" class="mb-3">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt iure quos nemo quia earum sint corrupti ipsam aliquam, magnam, minima distinctio! Quae qui molestiae itaque vitae explicabo aut rerum quod?</p>
         </div>
 
-        <div class="icono-texto">
-            <img src="img/menu-book-outline.svg" alt="Recetario">
+        <div class="icono-texto d-flex flex-column align-items-center col-12 col-md-4">
+            <img src="img/menu-book-outline.svg" alt="Recetario" class="mb-3">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt iure quos nemo quia earum sint corrupti ipsam aliquam, magnam, minima distinctio! Quae qui molestiae itaque vitae explicabo aut rerum quod? lore</p>
         </div>
     </section>
 
     <footer>
-        <h3>Visita nuestras redes sociales</h3>
+        <h3 class="text-center">Visita nuestras redes sociales</h3>
 
-        <div class="redes">
-            <a href="https://www.instagram.com" target="_blank">
+        <div class="redes d-flex justify-content-center">
+            <a href="https://www.instagram.com" target="_blank" class="me-5">
                 <i class="bi bi-instagram"></i>
             </a>
 
-            <a href="https://www.tiktok.com" target="_blank">
+            <a href="https://www.tiktok.com" target="_blank" class="me-5">
                 <i class="bi bi-tiktok"></i>
             </a>
 
-            <a href="https://www.youtube.com" target="_blank">
+            <a href="https://www.youtube.com" target="_blank" class="me-5">
                 <i class="bi bi-youtube"></i>
             </a>
         </div> 

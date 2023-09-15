@@ -1,0 +1,100 @@
+header {
+    background-color: #3dc754;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Este codigo sin media va destinada a pantallas chicas */
+.carousel-item img {
+    height: 45vh;
+}
+
+@media (min-width: 520px) {
+    .carousel-item img {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 678px) {
+    .carousel-item img {
+        height: 70vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    .corousel-item img {
+        height:90vh;
+    }
+
+    #carouselExampleFade {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+/*LISTO PARA PANTALLAS CHICAS*/
+.container-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+/*TABLETS*/
+@media (min-width: 768px) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+/*PANTALLAS GRANDES*/
+@media (min-width: 992px) {
+    .container-cards {
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+.card {
+    max-width: 100%;
+}
+/*height se puede probar para dejar la misma altura a las img de las cards*/
+.card-img-top {
+    height: 300px;
+}
+
+.icono-texto img {
+    width: 70px;
+}
+
+p {
+    text-align: center;
+}
+
+.bi {
+    font-size: 3rem;
+}
+
+.bi-instagram {
+    color: blue;
+}
+
+.bi-tiktok {
+    color: black;
+}
+
+.bi-youtube {
+    color: red;
+}
